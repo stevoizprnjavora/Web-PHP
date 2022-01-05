@@ -12,8 +12,9 @@
         ';
         if (!isset($_SESSION['user']['valid']) || $_SESSION['user']['valid'] == 'false') {
             print '
-            <li><a href="register.php?menu=6">Registracija</a></li>
-            <li><a href="signin.php?menu=7">Prijava</a></li>';
+            <li><a href="register.php?menu=6">Registrate</a></li>
+            <li><a href="login.php?menu=7">Login</a></li>
+            <li><a href="logout.php?menu=7">Logout</a></li>';
         }
         else if ($_SESSION['user']['valid'] == 'true') {
             print '
